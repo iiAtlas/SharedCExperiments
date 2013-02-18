@@ -23,6 +23,20 @@ void atlas() {
 	swapVars(&myV1, &myV2);
 	printf("myV1 = %d, myV2 = %d\n", myV1, myV2);
 
+	typedef struct {
+		int demoInt;
+		char demoChar;
+	} DemoStruct;
+
+	DemoStruct ds;
+	ds.demoInt = 10;
+	ds.demoChar = 'a';
+	
+	DemoStruct ds2 = { 20, 'b' };
+
+	printf("Demo Struct Style 1: %d %c\n", ds.demoInt, ds.demoChar);
+	printf("Demo Struct Style 2: %d %c\n", ds2.demoInt, ds2.demoChar);
+
 	printf("Completed Atlas' experiments.\n\n");
 }
 
