@@ -8,4 +8,4 @@ Rules:
 	5. If you're going to make a global variable, don't use a generic name
 	6. No anonymous functions, always write function prototypes
 
-Have fun!
+Have fun, and good luck!
