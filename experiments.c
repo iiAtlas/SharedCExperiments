@@ -33,6 +33,9 @@ void atlas() {
 	ds.demoChar = 'a';
 	
 	DemoStruct ds2 = { 20, 'b' };
+	DemoStruct *pds3 = &ds2;
+	
+	pds3 -> demoInt = 25; //-> is the same as (*pds3).
 
 	printf("Demo Struct Style 1: %d %c\n", ds.demoInt, ds.demoChar);
 	printf("Demo Struct Style 2: %d %c\n", ds2.demoInt, ds2.demoChar);
