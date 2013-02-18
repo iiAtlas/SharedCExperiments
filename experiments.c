@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 
 void atlas();
 void wally();
@@ -34,6 +34,20 @@ void swapVars(int *v1, int *v2) {
 
 void wally() {
 	printf("Executing Wally's experiments...\n");
+	
+	struct trial {
+		char first_name;
+		char last_name;
+		int age;
+	};
+	
+	struct trial t;
+	
+	t.first_name = "Wally";
+	t.last_name = "Mclallen";
+	t.age = 16;
+	
+	printf("%c %c %d", t.first_name, t.last_name, t.age);
 
 	printf("Completed Wally's experiments.\n\n");
 }
