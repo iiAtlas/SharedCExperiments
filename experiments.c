@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void atlas();
 void wally();
@@ -12,7 +13,7 @@ int main() {
 	wally();
 
 	printf("Completed experimentation.\n");
-	return 0;
+	exit(EXIT_SUCCESS);
 }
 
 void atlas() {
@@ -44,13 +45,13 @@ void wally() {
 	
 	(unsigned)si = si + usi;
 	
-	printf("Test One: %d", si);
+	printf("Test One: %d\n", si);
 	
 	usi = -10;
 	si = 5;
 	
 	if(usi < si) {
-		printf("This shouldn't run... but it is late...");
+		printf("This shouldn't run... but it is late...\n");
 	}
 
 	printf("Completed Wally's experiments.\n\n");
