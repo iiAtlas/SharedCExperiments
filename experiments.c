@@ -35,19 +35,23 @@ void swapVars(int *v1, int *v2) {
 void wally() {
 	printf("Executing Wally's experiments...\n");
 	
-	struct trial {
-		char first_name;
-		char last_name;
-		int age;
-	};
+	//Signed & Unsigned Ints
+	int usi; //Signed int usi
+	unsigned int si; //Unsigned int si
 	
-	struct trial t;
+	usi = -10;
+	si = 5;
 	
-	t.first_name = "Wally";
-	t.last_name = "Mclallen";
-	t.age = 16;
+	(unsigned)si = si + usi;
 	
-	printf("%c %c %d", t.first_name, t.last_name, t.age);
+	printf("Test One: %d", si);
+	
+	usi = -10;
+	si = 5;
+	
+	if(usi < si) {
+		printf("This shouldn't run... but it is late...");
+	}
 
 	printf("Completed Wally's experiments.\n\n");
 }
