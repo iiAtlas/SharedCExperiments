@@ -51,8 +51,12 @@ void wally() {
 	
 	if(usi < si) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		printf("This shouldn't run... but it is late...");
 		printf("Now it's day!");"
+=======
+		printf("This shouldn't run... but it is late...\n");
+>>>>>>> int-testing
 =======
 		printf("This shouldn't run... but it is late...\n");
 >>>>>>> int-testing
