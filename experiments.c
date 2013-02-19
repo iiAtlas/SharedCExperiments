@@ -3,7 +3,6 @@
 
 void atlas();
 void wally();
-
 void swapVars(int *v1, int *v2); //Swap values of v1 and v2
 
 int main() {
