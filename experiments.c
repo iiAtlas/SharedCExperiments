@@ -1,8 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void atlas();
 void wally();
-
 void swapVars(int *v1, int *v2); //Swap values of v1 and v2
 
 int main() {
@@ -12,7 +12,7 @@ int main() {
 	wally();
 
 	printf("Completed experimentation.\n");
-	return 0;
+	exit(EXIT_SUCCESS);
 }
 
 void atlas() {
@@ -44,14 +44,18 @@ void wally() {
 	
 	(unsigned)si = si + usi;
 	
-	printf("Test One: %d", si);
+	printf("Test One: %d\n", si);
 	
 	usi = -10;
 	si = 5;
 	
 	if(usi < si) {
+<<<<<<< HEAD
 		printf("This shouldn't run... but it is late...");
 		printf("Now it's day!");"
+=======
+		printf("This shouldn't run... but it is late...\n");
+>>>>>>> int-testing
 	}
 
 	printf("Completed Wally's experiments.\n\n");
