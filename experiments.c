@@ -51,6 +51,7 @@ void wally() {
 	
 	if(usi < si) {
 		printf("This shouldn't run... but it is late...");
+		printf("Now it's day!");"
 	}
 
 	printf("Completed Wally's experiments.\n\n");
